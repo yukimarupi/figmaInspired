@@ -6,12 +6,11 @@ const features = [
   {
     title: 'Title Goes Here',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.',
-    icon: '/images/Icon.png', // ここを変更
-  },
+    icon: '/images/icon/Icon.png',  },
   {
     title: 'Title Goes Here',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.',
-    icon: '/images/Icon.png', // ここを変更
+    icon: '/images/icon/Icon.png', // 修正: 正しいパスを指定
   },
 ];
 

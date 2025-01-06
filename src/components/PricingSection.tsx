@@ -1,11 +1,16 @@
 import React from 'react';
-
+import Image from 'next/image';
 
 const PricingSection: React.FC = () => {
   return (
     <section className="py-20 bg-blue-50 text-center relative">
-      <div className="absolute inset-0">
-        <img src="/images/Rectangle.png" alt="Background" className="w-full h-full object-cover opacity-20" />
+      <div className="relative w-full h-full">
+        <Image
+          src="/images/Rectangle.png"
+          alt="Background"
+          fill
+          className="object-cover opacity-20"
+        />
       </div>
       <div className="relative container mx-auto px-6">
         <h2 className="text-3xl font-bold text-blue-900 mb-4">A Price To Suit Everyone</h2>
