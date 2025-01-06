@@ -24,9 +24,9 @@ const middleFeatures = [
 
 const MiddleSection: React.FC = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+       <div className="space-y-16">
           {middleFeatures.map((feature, index) => (
             <div key={index} className="text-center bg-white p-6 shadow-md rounded-lg">
               <Image
@@ -36,8 +36,10 @@ const MiddleSection: React.FC = () => {
                 height={150}
                 className="mx-auto mb-4"
               />
-              <h3 className="text-xl font-bold text-blue-800 mb-2">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <div className="md:w-1/2 text-center md:text-left">
+                <h3 className="text-xl font-bold text-blue-800 mb-2">{feature.title}</h3>
+                <p className="text-gray-600">{feature.description}</p>
+              </div>
             </div>
           ))}
         </div>
