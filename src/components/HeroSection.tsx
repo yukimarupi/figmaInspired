@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from 'next/image';
+
 
 const HeroSection: React.FC = () => {
   return (
@@ -15,7 +17,12 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
         <div className="md:w-1/2">
-          <img src="/images/undraw_mobile_login_ikmv.png" alt="Hero Image" className="w-full" />
+        <Image
+            src="/images/Group.png"
+            alt="Group Image"
+            width={500} // 必要に応じて変更
+            height={500} // 必要に応じて変更
+          />
         </div>
       </div>
     </section>

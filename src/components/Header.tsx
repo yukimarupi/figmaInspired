@@ -1,16 +1,16 @@
-import React from 'react';
+import Image from 'next/image';
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-white shadow-md">
-      <div className="container mx-auto flex justify-between items-center py-4 px-6">
-        <div className="text-2xl font-bold text-blue-800">Landing</div>
-        <nav className="space-x-8">
-          <a href="#" className="text-gray-700 hover:text-blue-800">Home</a>
-          <a href="#" className="text-gray-700 hover:text-blue-800">About</a>
-          <a href="#" className="text-gray-700 hover:text-blue-800">Contact</a>
+    <header className="bg-gray-800 text-white py-4">
+      <div className="container mx-auto flex justify-between items-center">
+        <h1 className="text-2xl font-bold">My Figma Site</h1>
+        <nav className="space-x-4">
+          <a href="#" className="hover:text-gray-300">Home</a>
+          <a href="#" className="hover:text-gray-300">About</a>
+          <a href="#" className="hover:text-gray-300">Contact</a>
         </nav>
-        <button className="bg-blue-800 text-white px-4 py-2 rounded-full">Buy Now</button>
+        <Image src="/globe.svg" alt="Globe Icon" width={24} height={24} />
       </div>
     </header>
   );
